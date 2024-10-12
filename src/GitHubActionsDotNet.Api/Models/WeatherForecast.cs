@@ -12,4 +12,3 @@ public record WeatherForecast
 
     public string? Observatory { get; init; }
 }
-
