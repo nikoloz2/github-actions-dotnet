@@ -27,6 +27,7 @@ jobs:
         run: dotnet test --configuration Release --no-build
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #      - name: dotnet format
 #        run: dotnet format -v detailed --verify-no-changes
 =======
@@ -63,3 +64,7 @@ jobs:
 #          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 #
 >>>>>>> 14cae1a (added tests to the workflow)
+=======
+      - name: dotnet format
+        run: dotnet format -v detailed --verify-no-changes
+>>>>>>> 15b6749 (add CI)
