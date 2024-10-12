@@ -1,15 +1,15 @@
-name: PR Verify
+name: CI
 
 env:
   DOTNET_VERSION: '8.0'                 # set this to the .NET Core version to use
 
 on:
-  pull_request:
+  push:
     branches: [ "main" ]
 
 jobs:
   build:
-    name: PR Verify
+    name: CI
     runs-on: ubuntu-latest
 
     steps:
@@ -26,5 +26,5 @@ jobs:
       - name: dotnet test
         run: dotnet test --configuration Release --no-build
 
-      - name: dotnet format
-        run: dotnet format -v detailed --verify-no-changes
+      - name: dotnet publish
+        run: dotnet publish src/GitHubActionsDotNet.Api/GitHubActionsDotNet.Api.csproj --configuration Release -o artifacts
