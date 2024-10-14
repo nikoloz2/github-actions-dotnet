@@ -10,5 +10,5 @@ public record WeatherForecast
 
     public string? Summary { get; init; }
 
-    public string? Observatory { get; init; }
+	public string? Observatory { get; init; }
 }
