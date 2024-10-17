@@ -10,9 +10,5 @@ public record WeatherForecast
 
     public string? Summary { get; init; }
 
-<<<<<<< HEAD
     public string? Observatory { get; init; }
-=======
-	public string? Observatory { get; init; }
->>>>>>> 2bc5d15 (add CI (update))
 }
