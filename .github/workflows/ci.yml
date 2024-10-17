@@ -33,7 +33,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: dometrain-artifact
-          path: artifacts/ # or path/to/artifact
-          
-=======
->>>>>>> 15b6749 (add CI)
+          path: artifacts/
